@@ -5,10 +5,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "@netlify/plugin-nextjs": "^4.39.1",
     "@reduxjs/toolkit": "^1.8.1",
     "@stripe/react-stripe-js": "^1.8.0-0",
     "@stripe/stripe-js": "^1.29.0",

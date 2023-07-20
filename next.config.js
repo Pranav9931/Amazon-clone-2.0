@@ -7,4 +7,5 @@ module.exports = {
   env: {
     stipe_public_key: process.env.STRIPE_PUBLIC_KEY,
   },
+  target: 'serverless',
 }
