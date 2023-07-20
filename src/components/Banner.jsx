@@ -1,6 +1,9 @@
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import Image from 'next/image'
+import Banner1 from "../assets/Banner1.jpeg"
+import Banner2 from "../assets/Banner2.jpeg"
+import Banner3 from "../assets/Banner3.jpeg"
 
 function Banner() {
   return (
@@ -26,7 +29,7 @@ function Banner() {
               height={100}
               loading="lazy"
               quality={100}
-              src="/banner1.jpg"
+              src={Banner1}
               alt="Banner 1"
             />
           </div>
@@ -37,7 +40,7 @@ function Banner() {
               height={100}
               loading="lazy"
               quality={100}
-              src="/banner2.jpg"
+              src={Banner2}
               alt="Banner 2"
             />
           </div>
@@ -48,7 +51,7 @@ function Banner() {
               height={100}
               loading="lazy"
               quality={100}
-              src="/banner3.jpg"
+              src={Banner3}
               alt="Banner 3"
             />
           </div>

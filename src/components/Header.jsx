@@ -47,14 +47,15 @@ function Header({ products }) {
         {/* Logo */}
         <div className=" flex-shrink-1 mt-2 flex w-28 items-center xs:w-32">
           <Link href="/">
-            <Image
+            {/* <Image
               src="/amazon.png"
               alt="Amazon"
               width={150}
               height={40}
               objectFit="contain"
               className="cursor-pointer"
-            />
+            /> */}
+            <svg width="48" height="50" color='white' style={{marginLeft: '10px'}} viewBox="0 0 48 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.6761 24.1784V12.0892H25C25 5.45775 19.4366 0 12.6761 0C5.91549 0 0.352113 5.45775 0.352113 12.0892C0.352113 18.7207 5.91549 24.1784 12.6761 24.1784ZM35.2113 50V37.9108H47.5352C47.5352 31.2793 41.9718 25.8216 35.2113 25.8216C28.4507 25.8216 22.8873 31.2793 22.8873 37.9108C22.8873 44.5423 28.4507 50 35.2113 50ZM35.2113 23.8263L47.8873 0.352113H22.5352L35.2113 23.8263ZM25.3521 26.1737L12.6761 49.6479L0 26.1737H25.3521Z" fill="currentColor"></path></svg>
           </Link>
         </div>
 

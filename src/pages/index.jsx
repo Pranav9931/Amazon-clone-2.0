@@ -25,7 +25,7 @@ export default function Home({ products }) {
 
 export async function getServerSideProps(context) {
   const session = await getSession(context)
-  const products = await fetch('https://fakestoreapi.com/products').then(
+  const products = await fetch('https://api-librarymanagement.netlify.app/.netlify/functions/server/books').then(
     (res) => res.json()
   )
   return {

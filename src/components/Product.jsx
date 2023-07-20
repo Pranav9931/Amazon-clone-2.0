@@ -17,6 +17,10 @@ function Product({ id, title, price, description, category, image }) {
     Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 1)) + MIN_RATING
   )
 
+  const [count] = useState(
+    Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 100)) + MIN_RATING
+  )
+
   const dispatch = useDispatch()
 
   const addItemToBasket = () => {
@@ -60,9 +64,20 @@ function Product({ id, title, price, description, category, image }) {
       <Fade bottom>
         <>
           <div className="relative z-40 mx-5 my-3 flex h-[96%] flex-col rounded-2xl border-none bg-white p-10 shadow-sm transition-all duration-150 ease-out hover:scale-105 hover:ease-in">
-            <p className="absolute top-2 right-3 text-base capitalize italic text-gray-400">
+          <p className="absolute top-2 left-3 text-base capitalize italic text-gray-400">
               {category}
             </p>
+            <p className="absolute top-2 right-3 text-base capitalize italic text-gray-400"
+              style={{
+                background: 'red',
+                borderRadius: '5px',
+                padding: '5px',
+                color: '#fff'
+              }}
+            >
+              Books Left: {count}
+            </p>
+            <br />
             <div className="relative my-2 rounded-lg text-center transition-all duration-150 ease-out hover:scale-105 hover:opacity-100 hover:ease-in">
               <Image
                 src={image}
